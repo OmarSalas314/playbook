@@ -1,10 +1,14 @@
-class pokemon {
-    constructor(name) {
-      // this es una variable para referenciar el valor del contexto local de esta clase
-      this.name = name // Est�s variables se le conocen como atributos
-    }
+const { Pokemon } = require("./Pokemon.1")
 
-export class pokemon {
-    constructor (name) {
-      this.name = name
+(), sayMessage()) {
+    this.sayHello = sayHello
+    this.sayMessage = sayMessage
+  }
+
+  log (message) {
+   console.log('[' + this.sayHello + '] ' + this.sayMessage)
+  }
 }
+
+module.exports = new Pokemon ('DEFAULT') // Nuevo objeto instanciado
+module.exports.Pokemon = Pokemon // Clase

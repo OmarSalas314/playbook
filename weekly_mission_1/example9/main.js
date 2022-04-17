@@ -17,3 +17,8 @@ charmander.sayMessage("Heey!")
 squirtle.sayHello()
 squirtle.sayMessage("Heey!")
 
+// Importando la clase MyLogger
+import Pokemon  from './pokemon.js'
+
+const logger = new MyPokemon('info')
+logger.log('Hello World')
