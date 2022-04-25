@@ -4,16 +4,16 @@
   import MyPokemon from './pokemon.js'
 */
 
-export default class Pokemon {
-    constructor (name) {
-      this.name = name
-    }
-function name(params) {
-  
-}
-
-  
-    log (message) {
-      console.log(`[${this.name}] ${message}`)
-    }
+export default class Pokemon{
+  constructor(name){
+    this.name = name
   }
+
+  sayHello(){
+    console.log(`Mi pokemon ${this.name} te saluda!!!`)
+  }
+
+  sayMessage(msg){
+    console.log(`Mi pokemon ${this.name} dice: ${msg}`)
+  }
+}
