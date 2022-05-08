@@ -85,3 +85,12 @@ console.log(explorersjs)
 
 const explorerscdmx = explorers.find((user) => user.city = "CDMX")
 console.log("Explorer que sea de la CDMX:" + explorerscdmx.name)
+
+//-------------------------------------------------------------------------------------------------------------
+//6.Obtén la suma de todos los exercises_completed, usa REDUCE
+var newlexplorerec = explorers.map(function(explorer) {
+  return explorer.exercises_completed
+})
+const sumec = newlexplorerec.reduce((acc, element) => acc + element, 0)
+console.log("Obtén la suma de todos los exercises_completed, usa REDUCE")
+console.log(sumec)
