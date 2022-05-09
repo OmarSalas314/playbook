@@ -94,3 +94,11 @@ var newlexplorerec = explorers.map(function(explorer) {
 const sumec = newlexplorerec.reduce((acc, element) => acc + element, 0)
 console.log("Obtén la suma de todos los exercises_completed, usa REDUCE")
 console.log(sumec)
+
+//-------------------------------------------------------------------------------------------------------------
+//7. Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
+var exfinstru = explorers.map(function(explorer) {
+  return explorers.missions.frontend.exercisesFinished
+})
+const exfinstru1 = exfinstru.some((e) =>  e === true)
+console.log("Ejemplo 14: Alguno de los elementos en el array es false: " + exfinstru1)
